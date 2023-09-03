@@ -1,8 +1,8 @@
-import type {Config} from 'jest';
-import {defaults} from 'jest-config';
-
-const config: Config = {
-  moduleFileExtensions: [...defaults.moduleFileExtensions, 'mts'],
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  transform: {
+    '^.+\\.ts?$': 'ts-jest',
+  },
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
 };
-
-export default config;
