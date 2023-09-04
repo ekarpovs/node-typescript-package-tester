@@ -94,19 +94,22 @@ npm run prepare
 
 ### Test a npm package
 
-Locally install a new package.
+Create new branch.
+Locally install a new package:
 
-- Copy path from a package that will be tested.
+- Copy path from the package that will be tested.
 - execute the command:
 
 ```bash
-npm i <abs path to the tested package>
+npm i <abs path to the tested package.tgz>
 
 ```
 
-Put your code into the index.ts file.  
+Put your test code into the index.ts file.  
 Put you tests under the test folder.
 Test the package.
+Uninstall the package.
+Delete the branch.
 
 ### Usage the commands from the command line during the development:
 
