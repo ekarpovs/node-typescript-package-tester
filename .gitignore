@@ -4,5 +4,6 @@ build
 node_modules
 src/**.js
 coverage
+logs
 *.log
 yarn.lock
