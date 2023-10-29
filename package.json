@@ -13,8 +13,8 @@
   "scripts": {
     "clean": "./node_modules/.bin/rimraf ./build",
     "build": "run-s clean && npx tsc",
-    "dev": "nodemon ./src/index.ts",
-    "start": "ts-node ./src/index.ts",
+    "dev": "NODE_ENV=dev nodemon ./src/index.ts",
+    "start": "NODE_ENV=prod ts-node ./src/index.ts",
     "lint": "run-s lint:*",
     "lint:spell": "cspell \"{README.md,.github/*.md,src/**/*.ts}\"",
     "lint:lint": "eslint src --ext .ts",
